@@ -1,0 +1,9 @@
+.Reasons {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vh;
+    height: 100vh;
+}

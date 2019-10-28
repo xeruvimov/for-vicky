@@ -20,7 +20,7 @@ function ModalLove(props) {
                     <span role="img" aria-label="kiss">😘😘😘😘😘😘😘😘😘</span>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary" onClick={handleClose}>
+                    <Button variant="outline-primary" onClick={handleClose}>
                         <span role="img" aria-label="inlove">😍</span>
                     </Button>
                 </Modal.Footer>
