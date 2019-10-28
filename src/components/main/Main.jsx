@@ -2,6 +2,7 @@ import React from 'react'
 import photo from './vicky.jpg';
 import ModalLove from '../modal/ModalLove'
 import Link from 'react-router-dom/Link'
+import LoveTimer from '../timer/Timer';
 
 function Main(props) {
     return (
@@ -12,6 +13,7 @@ function Main(props) {
             </p>
             <ModalLove />
             <Link to="/reasons">А за что?</Link>
+            <LoveTimer/>
         </header>
     )
 }
