@@ -14,7 +14,15 @@ export default function LoveTimer(props) {
         };
     }, []);
 
+    //побитовая магия говна
+    let seconds = date / 1000
+    let minute = seconds / 60
+    seconds = ~~(seconds % 60)
+    let hour = minute / 60
+    minute = ~~(minute % 60)
+    let day = ~~(hour / 24)
+    hour = ~~(hour % 24)
     return <>
-        <div>{`${date}`}</div>
+        <div>{`${day} дней ${hour} часов ${minute} минут ${seconds} секунд вместе`}</div>
     </>
 }

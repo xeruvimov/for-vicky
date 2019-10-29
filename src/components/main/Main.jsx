@@ -10,10 +10,10 @@ function Main(props) {
             <img src={photo} className="App-logo" alt="logo" />
             <p>
                 Люблю Вики
+            <LoveTimer/>
             </p>
             <ModalLove />
             <Link to="/reasons">А за что?</Link>
-            <LoveTimer/>
         </header>
     )
 }
