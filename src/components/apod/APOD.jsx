@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useFetch } from './hook'
-import { Image } from 'react-bootstrap'
+import { Image, Spinner } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import './apod.css'
 
@@ -16,7 +16,8 @@ export default function APOD(props) {
             <p>
                 Astronomy Picture of the Day
             </p>
-            <Image src={data.url} rounded alt={"Тут должна быть пикча"} />
+            {loading ? (<Spinner animation="border" variant="light" />) :
+                (<Image src={data.url} rounded alt={"Тут должна быть пикча"} />)}
             <p>
                 {data.explanation}
             </p>
