@@ -9,7 +9,7 @@ function Main(props) {
         <header className="App-header">
             <img src={photo} className="App-logo" alt="logo" />
             <p>
-                Люблю Вики
+                Люблю Вики!
             <LoveTimer/>
             </p>
             <ModalLove />

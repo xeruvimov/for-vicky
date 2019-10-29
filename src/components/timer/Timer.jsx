@@ -23,6 +23,6 @@ export default function LoveTimer(props) {
     let day = ~~(hour / 24)
     hour = ~~(hour % 24)
     return <>
-        <div>{`${day} дней ${hour} часов ${minute} минут ${seconds} секунд вместе`}</div>
+        <div>{`Уже ${day} дней ${hour} часов ${minute} минут ${seconds} секунд вместе`}</div>
     </>
 }
