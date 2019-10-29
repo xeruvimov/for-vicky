@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Main from './components/main/Main';
 import Reasons from './components/reasons/Reasons';
+import APOD from './components/apod/APOD';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Main} />
           <Route path="/reasons" component={Reasons} />
+          <Route path="/apod" component={APOD} />
         </Switch>
       </HashRouter>
     </div>
